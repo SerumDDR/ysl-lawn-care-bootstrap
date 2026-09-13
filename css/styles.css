@@ -1,0 +1,118 @@
+/*
+    Student Name: Donnie Ranjel
+    File Name: styles.css
+    Date: 11/12/2024
+*/
+
+/* Begin Mobile Styles */
+
+/* Show mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/* Style rules for hero image and header */
+.hero {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-image.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.welcome {
+	position: absolute;
+	top: 20%;
+	margin: auto;
+	padding: 2em;
+}
+
+.welcome p {
+	font-size: 1.25em;
+	width: 70%;
+	line-height: 1.5;
+}
+
+/* Style rules for gallery page. */
+#placeholder {
+	display: none;
+}
+
+.img-gal {
+	text-align: center;
+	font-size: 1em;
+}
+.img-gal-thumb {
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 2px;
+	border: dashed 0.25em #331a00; 
+}
+
+/* Style rules for about us page */
+.family-photo {
+	clear: left;
+}
+
+/* Style rule for map */
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Style rule for labels */
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) {
+
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for map */
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+    
+     /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) {  
+
+    /* Desktop Viewport: Style rules for form */
+    form {
+        width: auto;
+        margin-bottom: 2%;
+    }
+    
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px; 
+    }
+    
+    .btn {
+        grid-column: 1 / span 3;
+    }
+
+}
